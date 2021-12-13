@@ -8,11 +8,11 @@ select ESTUDIANTE.nombre, ESTUDIANTE.apellido, cursos.name from ESTUDIANTE inner
 
 -- Ejercicio 3
 
-select PROFESOR.nombre, PROFESOR.apellido, cursos from PROFESOR inner join CURSO on PROFESOR.id = CURSO.PROFESOR_id
+select PROFESOR.nombre, PROFESOR.apellido, curso.name, cursos from PROFESOR inner join CURSO on PROFESOR.id = CURSO.PROFESOR_id
 
 -- Ejercicio 4
 
-select PROFESOR.nombre, PROFESOR.apellido, cursos from PROFESOR inner join CURSO on PROFESOR.id = CURSO.PROFESOR_id order by CURSO.nombre
+select PROFESOR.nombre, PROFESOR.apellido, curso.name, cursos from PROFESOR inner join CURSO on PROFESOR.id = CURSO.PROFESOR_id order by CURSO.nombre
 
 -- Ejercicio 5
 
